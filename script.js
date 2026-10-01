@@ -60,6 +60,7 @@ function closeLightbox(){
  document.body.style.overflow='';
  certs.forEach(c=>c.classList.remove('flipped'));
 }
+
 document.querySelector('.close-lightbox').addEventListener('click',closeLightbox);
 lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeLightbox();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox();});
