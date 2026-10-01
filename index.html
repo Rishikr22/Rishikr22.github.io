@@ -1,169 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Rishi Kumar — Data Analytics, Python and AI/ML portfolio.">
-<title>Rishi Kumar — Data & AI Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#07090b">
+  <meta name="description" content="Rishi Kumar — B.Tech AI & ML student, Data Analytics, Python and AI portfolio.">
+  <title>Rishi Kumar — Data × AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="cursor-glow"></div>
+<div class="bg-grid"></div>
 <div class="noise"></div>
+<div class="cursor-glow"></div>
 
 <header class="nav">
-  <a class="brand" href="#home">RK<span>.</span></a>
-  <nav id="navLinks">
-    <a href="#work">Work</a>
+  <a class="brand" href="#home" aria-label="Rishi Kumar home">RK<span>.</span></a>
+  <button class="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#resume">Resume</a>
     <a href="#contact">Contact</a>
-    <a class="resume-btn" href="assets/Rishi_Kumar_Resume.pdf" target="_blank">Resume ↗</a>
   </nav>
-  <button class="menu" aria-label="Toggle navigation">☰</button>
 </header>
 
 <main>
+
 <section id="home" class="hero">
-  <div class="hero-orb orb-one"></div>
-  <div class="hero-orb orb-two"></div>
+  <div class="hero-glow glow-a"></div>
+  <div class="hero-glow glow-b"></div>
 
-  <div class="eyebrow reveal"><span class="pulse-dot"></span> DATA · PYTHON · AI/ML</div>
+  <div class="eyebrow reveal"><span class="live-dot"></span> B.TECH AI & ML · 2027 · DELHI, INDIA</div>
 
-  <h1 class="hero-name reveal">
-    Rishi<br><span>Kumar</span>
-  </h1>
+  <div class="hero-layout">
+    <div>
+      <h1 class="hero-title reveal">Rishi<br><span>Kumar</span></h1>
+      <p class="hero-sub reveal">Data <i>×</i> AI <i>×</i> Problem Solving</p>
+      <p class="hero-copy reveal">
+        I’m a B.Tech Artificial Intelligence & Machine Learning student
+        who turns messy data into structured insights, dashboards and
+        practical solutions.
+      </p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="#projects">Explore my work <b>↓</b></a>
+        <a class="btn btn-ghost" href="#resume">View resume <b>↗</b></a>
+      </div>
+    </div>
 
-  <div class="typing-wrap reveal">
-    <span>I turn </span><span id="typed">data</span><span class="caret">|</span><span> into useful insights.</span>
+    <div class="hero-terminal reveal" aria-label="Profile summary">
+      <div class="terminal-top"><span></span><span></span><span></span><code>rishi.profile</code></div>
+      <div class="terminal-body">
+        <p><em>role</em> <strong>AI/ML Student</strong></p>
+        <p><em>focus</em> <strong>Data Analytics</strong></p>
+        <p><em>stack</em> <strong>Python · SQL · Power BI</strong></p>
+        <p><em>degree</em> <strong>B.Tech · 2027</strong></p>
+        <p><em>status</em> <strong class="status">open_to_opportunities</strong></p>
+      </div>
+    </div>
   </div>
 
-  <p class="hero-copy reveal">
-    B.Tech Artificial Intelligence & Machine Learning student focused on
-    Python, SQL, data visualization and analytics.
-  </p>
-
-  <div class="actions reveal">
-    <a class="primary magnetic" href="#projects">Explore my work <span>↓</span></a>
-    <a class="secondary magnetic" href="assets/Rishi_Kumar_Resume.pdf" target="_blank">View Resume ↗</a>
-  </div>
-
-  <div class="hero-stats reveal">
+  <div class="hero-bottom reveal">
     <div><strong>Python</strong><span>Analytics</span></div>
     <div><strong>SQL</strong><span>Databases</span></div>
     <div><strong>Power BI</strong><span>Visualization</span></div>
+    <div><strong>AI/ML</strong><span>Learning</span></div>
   </div>
-
-  <div class="scroll-note">SCROLL TO EXPLORE <span>↓</span></div>
 </section>
 
-<section class="about section reveal">
+
+<section id="about" class="section reveal">
   <div class="section-label">01 / ABOUT</div>
-  <div>
-    <div class="section-kicker">WHO I AM</div>
-    <h2>Building an analytical foundation for the future of AI.</h2>
-    <p>I’m a B.Tech AI & ML student at University School of Automation and Robotics (GGSIPU), with a Diploma in Computer Science Engineering.</p>
-    <p>I enjoy working with data, finding patterns, cleaning datasets and turning analysis into visual stories.</p>
-    <div class="mini-line"></div>
-    <p class="highlight">Currently focused on becoming a strong data analyst while building deeper AI/ML skills.</p>
+  <div class="section-content two-col">
+    <div>
+      <span class="kicker">WHO I AM</span>
+      <h2>Not just a student.<br><em>A builder in progress.</em></h2>
+    </div>
+    <div class="copy">
+      <p>
+        I’m currently pursuing a B.Tech in Artificial Intelligence &
+        Machine Learning at University School of Automation and Robotics
+        (GGSIPU), after completing a Diploma in Computer Science Engineering.
+      </p>
+      <p>
+        My current strength is the data side of technology: Python, SQL,
+        advanced Excel, Power BI, data cleaning, preprocessing and
+        visualization. I’m building deeper AI/ML capability alongside it.
+      </p>
+      <div class="about-line"><span></span><small>CURIOUS · ANALYTICAL · ADAPTABLE</small></div>
+    </div>
   </div>
 </section>
 
-<section id="work" class="section reveal">
-  <div class="section-label">02 / WORK</div>
+
+<section id="experience" class="section reveal">
+  <div class="section-label">02 / EXPERIENCE</div>
   <div class="section-content">
-    <div class="section-kicker">EXPERIENCE</div>
-    <h2>Career Engagements</h2>
+    <span class="kicker">PROJECT-BASED EXPERIENCE</span>
+    <h2>Learning by building.</h2>
 
-    <article class="timeline-card tilt">
-      <div class="date">JUL 2025 — AUG 2025</div>
-      <div>
-        <span class="card-index">01</span>
-        <h3>Data Analytics Intern</h3>
-        <h4>IBM SkillsBuild · Virtual Internship</h4>
-        <p>Contributed to a collaborative CO₂ Emissions Analysis project. Independently cleaned and preprocessed 200+ country-wise records using Python and Pandas, preparing analysis-ready datasets for visualization and team insights.</p>
-        <div class="tags"><span>Python</span><span>Pandas</span><span>Data Cleaning</span><span>Analytics</span></div>
+    <article class="experience-card">
+      <div class="experience-meta">
+        <span class="number">01</span>
+        <span class="date">JUN — JUL 2026</span>
+        <span class="type">PROJECT-BASED INTERNSHIP</span>
+      </div>
+      <div class="experience-main">
+        <div class="company-line"><span>IBM SKILLSBUILD × BHARATCARES</span><span class="role-badge">TEAM LEAD</span></div>
+        <h3>Gen AI & Cloud Computing Internship</h3>
+        <p>
+          Completed a 6-week IBM SkillsBuild Gen AI & Cloud Computing
+          internship conducted from 22 June 2026 to 31 July 2026.
+          Worked in a project-based team environment and took the
+          Team Lead role.
+        </p>
+        <div class="tags"><span>Generative AI</span><span>Cloud Computing</span><span>Team Lead</span><span>IBM SkillsBuild</span></div>
       </div>
     </article>
 
-    <article class="timeline-card tilt">
-      <div class="date">DATA ANALYTICS</div>
-      <div>
-        <span class="card-index">02</span>
-        <h3>Data Analytics Intern</h3>
-        <h4>Deloitte Australia · Virtual Internship</h4>
-        <p>Completed the Deloitte Australia Data Analytics Internship, gaining practical exposure to data analytics and data-driven problem solving.</p>
-        <div class="tags"><span>Data Analytics</span><span>Data Analysis</span></div>
+    <article class="experience-card">
+      <div class="experience-meta">
+        <span class="number">02</span>
+        <span class="date">2025 — 2026</span>
+        <span class="type">PROJECT-BASED EXPERIENCE</span>
+      </div>
+      <div class="experience-main">
+        <div class="company-line"><span>DELOITTE × FORAGE</span><span class="role-badge">DATA</span></div>
+        <h3>Data Analytics Project Experience</h3>
+        <p>
+          Completed Deloitte’s Data Analytics Job Simulation with
+          practical tasks in data analysis and forensic technology.
+          The certificate records the program period as April 2025
+          to March 2026.
+        </p>
+        <div class="tags"><span>Data Analysis</span><span>Forensic Technology</span><span>Deloitte</span></div>
       </div>
     </article>
   </div>
 </section>
+
 
 <section id="projects" class="section reveal">
   <div class="section-label">03 / PROJECTS</div>
   <div class="section-content">
-    <div class="section-kicker">SELECTED WORK</div>
-    <h2>Things I’ve built</h2>
-    <div class="projects">
-      <article class="project tilt"><span class="number">01</span><div class="project-arrow">↗</div><h3>Student Academic Performance Analysis</h3><p>Analyzed academic performance in relation to demographic and socio-economic factors, identifying patterns and correlations with external variables.</p><div class="tags"><span>Python</span><span>Pandas</span><span>Power BI</span></div></article>
-      <article class="project tilt"><span class="number">02</span><div class="project-arrow">↗</div><h3>Interactive Academic Dashboard</h3><p>Built interactive dashboards and visualizations to communicate academic insights effectively and make trends easier to understand.</p><div class="tags"><span>Power BI</span><span>Visualization</span><span>Excel</span></div></article>
-      <article class="project tilt"><span class="number">03</span><div class="project-arrow">↗</div><h3>Data Cleaning & Preprocessing</h3><p>Applied practical data-cleaning and preprocessing workflows to transform raw records into clean, analysis-ready datasets.</p><div class="tags"><span>Python</span><span>Pandas</span><span>Excel</span></div></article>
-      <article class="project tilt"><span class="number">04</span><div class="project-arrow">↗</div><h3>Database Management</h3><p>Worked with SQL and MySQL concepts for organizing, querying and managing structured data.</p><div class="tags"><span>SQL</span><span>MySQL</span><span>Database</span></div></article>
+    <span class="kicker">SELECTED WORK</span>
+    <h2>Data into decisions.</h2>
+    <div class="project-grid">
+      <article class="project-card tilt"><span class="number">01</span><span class="arrow">↗</span><h3>Student Academic Performance Analysis</h3><p>Analyzed academic performance against demographic and socio-economic factors, identifying patterns and correlations with external variables.</p><div class="tags"><span>Python</span><span>Pandas</span><span>Power BI</span></div></article>
+      <article class="project-card tilt"><span class="number">02</span><span class="arrow">↗</span><h3>Interactive Academic Dashboard</h3><p>Built interactive dashboards and visualizations to communicate insights effectively and make trends easier to understand.</p><div class="tags"><span>Power BI</span><span>Excel</span><span>Visualization</span></div></article>
+      <article class="project-card tilt"><span class="number">03</span><span class="arrow">↗</span><h3>Data Cleaning & Preprocessing</h3><p>Applied practical cleaning and preprocessing workflows to transform raw records into analysis-ready datasets.</p><div class="tags"><span>Python</span><span>Pandas</span><span>Excel</span></div></article>
+      <article class="project-card tilt"><span class="number">04</span><span class="arrow">↗</span><h3>Database Management</h3><p>Worked with SQL and MySQL concepts for organizing, querying and managing structured data.</p><div class="tags"><span>SQL</span><span>MySQL</span><span>Database</span></div></article>
     </div>
   </div>
 </section>
 
-<section id="skills" class="section reveal">
-  <div class="section-label">04 / SKILLS</div>
+
+<section id="certificates" class="section reveal">
+  <div class="section-label">04 / CERTIFICATES</div>
   <div class="section-content">
-    <div class="section-kicker">TOOLKIT</div>
-    <h2>What I work with</h2>
-    <div class="skill-grid">
-      <div class="skill-card tilt"><span class="skill-num">01</span><h3>Python</h3><p>Programming & Data Analysis</p><div class="skill-bar"><i style="width:86%"></i></div></div>
-      <div class="skill-card tilt"><span class="skill-num">02</span><h3>SQL</h3><p>Queries & Database Management</p><div class="skill-bar"><i style="width:82%"></i></div></div>
-      <div class="skill-card tilt"><span class="skill-num">03</span><h3>Excel</h3><p>Advanced Analytics & Dashboards</p><div class="skill-bar"><i style="width:90%"></i></div></div>
-      <div class="skill-card tilt"><span class="skill-num">04</span><h3>Power BI</h3><p>Data Visualization</p><div class="skill-bar"><i style="width:84%"></i></div></div>
-      <div class="skill-card tilt"><span class="skill-num">05</span><h3>Pandas</h3><p>Data Cleaning & Preprocessing</p><div class="skill-bar"><i style="width:83%"></i></div></div>
-      <div class="skill-card tilt"><span class="skill-num">06</span><h3>Machine Learning</h3><p>Foundational ML Concepts</p><div class="skill-bar"><i style="width:72%"></i></div></div>
+    <span class="kicker">TAP / CLICK TO FLIP</span>
+    <h2>Proof of learning.</h2>
+    <p class="section-intro">Interactive credentials — the certificate itself is on the back.</p>
+
+    <div class="certificate-grid">
+
+      <button class="certificate-card" type="button" aria-label="Flip IBM Gen AI certificate">
+        <div class="certificate-inner">
+          <div class="certificate-face certificate-front">
+            <div class="cert-top"><span>IBM</span><span>01</span></div>
+            <div class="cert-icon">AI<span>×</span>CLD</div>
+            <span class="cert-kind">PROJECT-BASED INTERNSHIP</span>
+            <h3>Gen AI & Cloud Computing</h3>
+            <p>IBM SkillsBuild × BharatCares</p>
+            <div class="cert-bottom"><span>TEAM LEAD</span><b>FLIP ↻</b></div>
+          </div>
+          <div class="certificate-face certificate-back">
+            <img src="assets/ibm-genai-certificate.jpg" alt="IBM SkillsBuild Gen AI and Cloud Computing certificate">
+            <span>CLICK TO RETURN ↻</span>
+          </div>
+        </div>
+      </button>
+
+      <button class="certificate-card" type="button" aria-label="Flip IBM Agentic AI certificate">
+        <div class="certificate-inner">
+          <div class="certificate-face certificate-front">
+            <div class="cert-top"><span>IBM SKILLSBUILD</span><span>02</span></div>
+            <div class="cert-icon">AG<span>·</span>AI</div>
+            <span class="cert-kind">PROGRAM CERTIFICATE</span>
+            <h3>Agentic AI</h3>
+            <p>CSRBOX × IBM SkillsBuild</p>
+            <div class="cert-bottom"><span>AI AGENT ARCHITECT</span><b>FLIP ↻</b></div>
+          </div>
+          <div class="certificate-face certificate-back">
+            <img src="assets/ibm-agentic-ai-certificate.jpg" alt="IBM SkillsBuild Agentic AI certificate">
+            <span>CLICK TO RETURN ↻</span>
+          </div>
+        </div>
+      </button>
+
+      <button class="certificate-card" type="button" aria-label="Flip Deloitte certificate">
+        <div class="certificate-inner">
+          <div class="certificate-face certificate-front">
+            <div class="cert-top"><span>DELOITTE</span><span>03</span></div>
+            <div class="cert-icon">DA<span>×</span>FT</div>
+            <span class="cert-kind">PROJECT-BASED EXPERIENCE</span>
+            <h3>Data Analytics</h3>
+            <p>Deloitte · Forage</p>
+            <div class="cert-bottom"><span>JOB SIMULATION</span><b>FLIP ↻</b></div>
+          </div>
+          <div class="certificate-face certificate-back">
+            <img src="assets/deloitte-certificate.png" alt="Deloitte Data Analytics Job Simulation certificate">
+            <span>CLICK TO RETURN ↻</span>
+          </div>
+        </div>
+      </button>
+
     </div>
   </div>
 </section>
+
+
+<section id="resume" class="section resume-section reveal">
+  <div class="section-label">05 / RESUME</div>
+  <div class="section-content">
+    <div class="resume-head">
+      <div>
+        <span class="kicker">WEB RESUME</span>
+        <h2>Rishi Kumar</h2>
+        <p>Data Analytics · Python · SQL · AI/ML</p>
+      </div>
+      <button class="print-btn" onclick="window.print()">Print / Save PDF ↗</button>
+    </div>
+
+    <div class="resume-paper">
+      <div class="resume-top">
+        <div>
+          <h3>RISHI KUMAR</h3>
+          <p>Delhi, India</p>
+        </div>
+        <div class="resume-contact">
+          <span>+91 8595989723</span>
+          <span>kumarrishi8595@gmail.com</span>
+          <a href="https://www.linkedin.com/in/rishi-kumar-32ab67251/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+
+      <div class="resume-block">
+        <h4>OBJECTIVE</h4>
+        <p>Data-driven B.Tech IT student currently pursuing a degree, with expertise in Python, SQL, and data visualization. Seeking an entry-level data analyst position to uncover insights from complex datasets and create impactful visualizations that support business decisions.</p>
+      </div>
+
+      <div class="resume-two">
+        <div class="resume-block">
+          <h4>EDUCATION</h4>
+          <div class="resume-item"><b>B.Tech — Artificial Intelligence & Machine Learning</b><span>Aug 2024 — Jun 2027</span><small>University School of Automation and Robotics (GGSIPU), New Delhi</small></div>
+          <div class="resume-item"><b>Diploma — Computer Science Engineering</b><span>Aug 2020 — Jun 2023</span><small>Guru Nanak Dev Institute of Technology (DSEU), New Delhi</small></div>
+        </div>
+
+        <div class="resume-block">
+          <h4>TECHNICAL SKILLS</h4>
+          <div class="resume-skills"><span>Python</span><span>SQL</span><span>Excel</span><span>Power BI</span><span>Pandas</span><span>MySQL</span><span>Machine Learning</span><span>Data Visualization</span></div>
+        </div>
+      </div>
+
+      <div class="resume-block">
+        <h4>PROJECTS</h4>
+        <div class="resume-item"><b>Student Academic Performance Analysis</b><small>Python · Pandas · Power BI</small><p>Analyzed academic performance in relation to demographic and socio-economic factors; identified patterns and correlations and built interactive dashboards.</p></div>
+      </div>
+
+      <div class="resume-block">
+        <h4>PROJECT-BASED EXPERIENCE</h4>
+        <div class="resume-item"><b>IBM SkillsBuild — Gen AI & Cloud Computing Internship · Team Lead</b><span>22 Jun 2026 — 31 Jul 2026</span><small>6-week project-based internship conducted with BharatCares and AICTE in association with IBM SkillsBuild.</small></div>
+        <div class="resume-item"><b>Deloitte — Data Analytics Job Simulation</b><span>Certificate issued Mar 29, 2026</span><small>Practical tasks in data analysis and forensic technology; program period recorded on the certificate as Apr 2025 — Mar 2026.</small></div>
+      </div>
+
+      <div class="resume-two">
+        <div class="resume-block">
+          <h4>CERTIFICATIONS</h4>
+          <p>IBM SkillsBuild — Gen AI & Cloud Computing</p>
+          <p>IBM SkillsBuild × CSRBOX — Agentic AI</p>
+          <p>Deloitte — Data Analytics Job Simulation</p>
+        </div>
+        <div class="resume-block">
+          <h4>STRENGTHS</h4>
+          <p>Problem-solving and analytical thinking</p>
+          <p>Effective communication and teamwork</p>
+          <p>Quick learner and adaptable</p>
+          <p>Time management and attention to detail</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section id="education" class="section reveal">
-  <div class="section-label">05 / EDUCATION</div>
+  <div class="section-label">06 / EDUCATION</div>
   <div class="section-content">
-    <div class="section-kicker">LEARNING</div>
-    <h2>Study & growth</h2>
-    <div class="education-card tilt"><div class="date">AUG 2024 — JUN 2027</div><div><span class="card-index">01</span><h3>B.Tech — Artificial Intelligence & Machine Learning</h3><p>University School of Automation and Robotics (GGSIPU) · New Delhi, India</p></div></div>
-    <div class="education-card tilt"><div class="date">AUG 2020 — JUN 2023</div><div><span class="card-index">02</span><h3>Diploma — Computer Science Engineering</h3><p>Guru Nanak Dev Institute of Technology (DSEU) · New Delhi, India</p></div></div>
-    <div class="certs"><h3>Certifications</h3><p>IBM SkillsBuild — Data Analytics Internship</p><p>Deloitte Australia — Data Analytics Internship</p></div>
+    <span class="kicker">THE FOUNDATION</span>
+    <h2>Studying today.<br><em>Building tomorrow.</em></h2>
+
+    <div class="education-row">
+      <span class="date">2024 — 2027</span>
+      <div><span class="number">01</span><h3>B.Tech — Artificial Intelligence & Machine Learning</h3><p>University School of Automation and Robotics (GGSIPU) · New Delhi, India</p></div>
+    </div>
+
+    <div class="education-row">
+      <span class="date">2020 — 2023</span>
+      <div><span class="number">02</span><h3>Diploma — Computer Science Engineering</h3><p>Guru Nanak Dev Institute of Technology (DSEU) · New Delhi, India</p></div>
+    </div>
   </div>
 </section>
+
 
 <section id="contact" class="contact reveal">
   <div class="contact-grid">
     <div>
-      <div class="section-label">06 / CONTACT</div>
-      <div class="section-kicker">LET'S CONNECT</div>
+      <span class="kicker">07 / CONTACT</span>
       <h2>Let’s build something<br><em>useful with data.</em></h2>
       <p>Open to entry-level data analyst opportunities, projects and professional collaborations.</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/rishi-kumar-32ab67251/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="mailto:kumarrishi8595@gmail.com">Email ↗</a>
+      </div>
     </div>
+
     <div class="contact-card">
-      <span class="contact-label">EMAIL</span>
-      <a href="mailto:kumarrishi8595@gmail.com">kumarrishi8595@gmail.com ↗</a>
-      <span class="contact-label">PHONE</span>
-      <span>+91 85959 89723</span>
-      <span class="contact-label">LOCATION</span>
-      <span>Delhi, India</span>
-      <a class="contact-resume" href="assets/Rishi_Kumar_Resume.pdf" target="_blank">Download Resume ↗</a>
+      <span>EMAIL</span><a href="mailto:kumarrishi8595@gmail.com">kumarrishi8595@gmail.com</a>
+      <span>PHONE</span><b>+91 85959 89723</b>
+      <span>LOCATION</span><b>Delhi, India</b>
+      <span>GRADUATION</span><b>June 2027</b>
     </div>
   </div>
 </section>
+
 </main>
 
-<footer><span>© 2026 Rishi Kumar</span><span>DATA · PYTHON · AI/ML</span></footer>
+<footer>
+  <span>© 2026 Rishi Kumar</span>
+  <span>DATA · PYTHON · AI/ML</span>
+</footer>
 
 <script src="script.js"></script>
 </body>
