@@ -14,6 +14,11 @@ nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classLi
 const lightbox=document.querySelector('.lightbox'),lightboxImg=lightbox.querySelector('img');
 document.querySelectorAll('.cert').forEach(card=>{
  card.addEventListener('click',()=>{
+   if(!card.classList.contains('flipped')){
+     card.classList.add('flipped');
+     card.setAttribute('aria-label','Open full certificate');
+     return;
+   }
    lightboxImg.src=card.dataset.image;
    lightbox.classList.add('open');
    lightbox.setAttribute('aria-hidden','false');
