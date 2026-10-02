@@ -64,3 +64,27 @@ function closeLightbox(){
 document.querySelector('.close-lightbox').addEventListener('click',closeLightbox);
 lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeLightbox();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox();});
+
+
+/* =========================
+   DARK / LIGHT THEME
+========================= */
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = document.getElementById('themeIcon');
+
+function applyTheme(theme){
+  const light = theme === 'light';
+  document.body.classList.toggle('light-theme', light);
+  if(themeIcon) themeIcon.textContent = light ? '🌙' : '☀️';
+  if(themeToggle) themeToggle.setAttribute('aria-label', light ? 'Switch to dark theme' : 'Switch to light theme');
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', light ? '#f4f6f5' : '#080a0c');
+}
+
+const savedTheme = localStorage.getItem('portfolio-theme');
+applyTheme(savedTheme === 'light' ? 'light' : 'dark');
+
+themeToggle?.addEventListener('click', ()=>{
+  const nextTheme = document.body.classList.contains('light-theme') ? 'dark' : 'light';
+  localStorage.setItem('portfolio-theme', nextTheme);
+  applyTheme(nextTheme);
+});
